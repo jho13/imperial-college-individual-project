@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_app_usage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/main_query"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/main_app_usage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:text="App Usage"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/main_app_usage_icon"
+            app:layout_constraintTop_toBottomOf="@+id/view_app_usage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:text="Shows the battery consumed by each app.\nClick on an app to see more details."
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/main_app_usage_icon"
+            app:layout_constraintTop_toBottomOf="@+id/main_app_usage_title"/>
+
+        <ImageView
+            android:id="@+id/main_app_usage_icon"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_app_usage"
+            app:srcCompat="@drawable/ic_app_usage"/>
+
+        <View
+            android:id="@+id/view_app_usage"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#d3d3d3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_query"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/main_network"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/main_query_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Query"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/view_query"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:text="Shows app usage over any interval that you choose."
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/main_query_title"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_query"
+            app:srcCompat="@drawable/ic_query"/>
+
+        <View
+            android:id="@+id/view_query"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#d3d3d3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_network"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/main_settings"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/main_network_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Network"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/main_network_icon"
+            app:layout_constraintTop_toBottomOf="@+id/view_network"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Shows various information about mobile networks, WIFI and GPS."
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/main_network_icon"
+            app:layout_constraintTop_toBottomOf="@+id/main_network_title"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/main_network_icon"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_network"
+            app:srcCompat="@drawable/ic_network"/>
+
+        <View
+            android:id="@+id/view_network"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#d3d3d3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_settings"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/main_settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Settings"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/main_settings_icon"
+            app:layout_constraintTop_toBottomOf="@+id/view_settings"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:text="Configure settings."
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/main_settings_icon"
+            app:layout_constraintTop_toBottomOf="@+id/main_settings_title"/>
+
+        <ImageView
+            android:id="@+id/main_settings_icon"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_settings"
+            app:srcCompat="@drawable/ic_settings"/>
+
+        <View
+            android:id="@+id/view_settings"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#d3d3d3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

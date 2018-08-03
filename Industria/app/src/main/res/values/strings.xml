@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Industria</string>
+    <string name="main_menu_app">App Usage</string>
+    <string name="main_menu_network">Network</string>
+    <string name="main_menu_settings">Settings</string>
+</resources>

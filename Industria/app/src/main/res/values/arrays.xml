@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="display">
+        <item>List</item>
+        <item>Pie Chart</item>
+    </string-array>
+
+    <string-array name="temp">
+        <item>36°C</item>
+        <item>37°C</item>
+        <item>38°C</item>
+        <item>39°C</item>
+        <item>40°C</item>
+        <item>Never</item>
+    </string-array>
+</resources>
